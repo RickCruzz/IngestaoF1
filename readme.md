@@ -15,15 +15,16 @@ Esses dados são acessados através de um SQL Endpoint da Databricks possibilita
 
 ## Repo.py
 Responsável por conter as funções vinculadas à s3. Checar se o Bucket existe e se não existir, o criar.
-
 ## Ingestor.py
 Responsável por obter a lista de arquivos da pasta mapeada (/inputs). Após obter os arquivos deleta os mesmos da pasta.
 
 ## ETL
 OS dados são salvos e particionados pela coluna EXTRACTED_AT que simboliza o dia em que foram salvos no s3.
+![RAW](./dags/aws_dag/Results/BucketRaw.png)
 No segundo passo, temos os tratamentos, criação dos metadados e colunas, além de salvar os arquivos em formato PARQUET.
+![Silver](./dags/aws_dag/Results/BucketSilver.png)
 O terceiro passo é a transformação desses dados em views para serem consumidas pelas ferramentas de BI.
-
+![Gold](./dags/aws_dag/Results/BucketGold.png)
 ## Databricks
 
 Através do Databricks foi criado o pyspark Notebook para auxilio no ETL 
