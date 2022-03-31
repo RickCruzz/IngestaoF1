@@ -5,7 +5,6 @@ Passando por todas as camadas, como Bronze, Silver e Gold.
 Os dados utilizados foram do Kaggle referentes à competições de F1 de 1950 até 2021:
 [Dataset](https://www.kaggle.com/rohanrao/formula-1-world-championship-1950-2020)
 
-
 # Introdução
 
 Foi Utilizado um Airflow padrão com instalação via Docker-Compose.
