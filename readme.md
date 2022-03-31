@@ -27,4 +27,5 @@ O terceiro passo é a transformação desses dados em views para serem consumida
 Através do Databricks foi criado o pyspark Notebook para auxilio no ETL 
 Configurado e criado o SQL Endpoint e Views p/ Demonstração dos dados.
 Results em F1-Dashboard.pdf
+![ETL](./Databricks/ETL.png)
 ![Results](./Databricks/Results.png)
